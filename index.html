@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Basheer</title>
+
+    <link rel="icon" type="image/png" href="./images/title-image.png" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind - works on my machine -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+
+    <!-- nav -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">R<span class="text-white">B</span></a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="./documents/Ryan_Basheer_CV.pdf" download class="btn-outline nav-btn">
+              Download CV
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero -->
+    <!-- <div>debug: hero loaded</div> -->
+    <section
+      class="hero flex flex-col-reverse md:flex-row items-center justify-between gap-12 px-8 md:px-16 lg:px-24 py-20 relative overflow-hidden"
+      id="home"
+    >
+      <div class="hero-content max-w-2xl z-10 flex flex-col items-start gap-5 text-left p-6">
+        <p class="text-sky-400 text-2xl font-medium">Hello, I'm</p>
+
+        <h1 class="text-5xl md:text-7xl font-bold text-white leading-tight">
+          Ryan Basheer
+          <span class="cursor text-sky-400">_</span>
+        </h1>
+
+        <p class="text-xl md:text-2xl font-medium text-gray-700">
+          BSc Computer Science Student
+        </p>
+
+        <p class="flex items-center gap-2 border-b border-blue-400">
+          <i class="fa-solid fa-location-dot" style="color: rgb(48, 134, 255)"></i>
+          <span class="text-blue-300">Zossen, Brandenburg, Germany</span>
+        </p>
+
+        <p class="max-w-xl text-gray-300 text-base md:text-lg leading-8">
+          Passionate about building things with code and turning ideas into
+          practical solutions. I enjoy exploring software development,
+          algorithms, and databases, and I'm constantly learning new
+          technologies to grow as a computer science student and future software
+          developer.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-primary">View My Projects</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-image z-10">
+        <img
+          src="./images/ryan-profile.png"
+          alt="Ryan Basheer"
+          class="profile-img h-80 w-80 rounded-full object-cover border-4 border-zinc-400/40 shadow-lg hover:scale-105 transition-transform duration-300"
+        />
+      </div>
+
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+    </section>
+
+    <!-- about -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              I'm a motivated first-year Computer Science student at
+              <strong>GISMA University of Applied Sciences</strong> in Germany.
+              I have a strong interest in software development, algorithms, and
+              data systems.
+            </p>
+            <p>
+              My academic journey has given me hands-on experience with Python
+              programming, SQL databases, and core computer science concepts
+              like data structures and object-oriented programming.
+            </p>
+            <p>
+              I'm actively seeking opportunities to grow as a developer —
+              through internships, open-source contributions, or collaborative
+              projects that challenge me to apply what I've learned.
+            </p>
+
+            <div class="about-facts">
+              <span class="fact-pill">
+                <i class="fa-solid fa-graduation-cap" style="color: rgb(48, 134, 255); margin-right: 8px"></i>
+                First-Year BSc CS
+              </span>
+              <span class="fact-pill">
+                <i class="fa-solid fa-code" style="color: rgb(48, 134, 255); margin-right: 8px"></i>
+                Python Enthusiast
+              </span>
+              <span class="fact-pill">
+                <i class="fa-solid fa-database" style="color: rgb(48, 134, 255); margin-right: 8px"></i>
+                SQL Learner
+              </span>
+              <span class="fact-pill">
+                <i class="fa-solid fa-globe" style="color: rgb(48, 134, 255); margin-right: 8px"></i>
+                Based in Germany
+              </span>
+            </div>
+          </div>
+
+          <div class="about-card glass-card">
+            <h3 class="card-label">Quick Info</h3>
+            <ul class="info-list">
+              <li>
+                <span class="info-label">University</span>
+                <span class="info-value">GISMA University of Applied Sciences</span>
+              </li>
+              <li>
+                <span class="info-label">Degree</span>
+                <span class="info-value">BSc Computer Science</span>
+              </li>
+              <li>
+                <span class="info-label">Student ID</span>
+                <span class="info-value">GH1049732</span>
+              </li>
+              <li>
+                <span class="info-label">Graduation</span>
+                <span class="info-value">Expected 2028</span>
+              </li>
+              <li>
+                <span class="info-label">Email</span>
+                <span class="info-value">
+                  <a href="mailto:ryandxb777@gmail.com">ryandxb777@gmail.com</a>
+                </span>
+              </li>
+              <li>
+                <span class="info-label">Languages</span>
+                <span class="info-value">English · Malayalam · Hindi</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- education -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="edu-card glass-card reveal">
+          <div class="edu-header">
+            <div>
+              <h3 class="edu-degree">BSc Computer Science</h3>
+              <p class="edu-university">GISMA University of Applied Sciences</p>
+              <p class="edu-location">
+                <i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255); margin-right: 8px"></i>
+                Germany · Expected Graduation: 2028
+              </p>
+            </div>
+            <span class="edu-badge">Current</span>
+          </div>
+
+          <div class="coursework">
+            <h4 class="coursework-title">Relevant Coursework</h4>
+            <div class="course-tags">
+              <span class="course-tag">Python Programming</span>
+              <span class="course-tag">Data Structures &amp; Algorithms</span>
+              <span class="course-tag">Databases &amp; Big Data</span>
+              <span class="course-tag">Mathematical Foundations</span>
+              <span class="course-tag">Academic Research Writing</span>
+              <span class="course-tag">Project Management</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Skills</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title">Programming Languages</h3>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">Python</span>
+                <span class="skill-percent">72%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="72"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">SQL</span>
+                <span class="skill-percent">65%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title">CS Concepts</h3>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">Object-Oriented Programming</span>
+                <span class="skill-percent">68%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="68"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">Data Structures</span>
+                <span class="skill-percent">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">Algorithms &amp; Big-O</span>
+                <span class="skill-percent">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="55"></div>
+              </div>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-meta">
+                <span class="skill-name">Database Design</span>
+                <span class="skill-percent">62%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="62"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title">Tools</h3>
+            <div class="tool-badges">
+              <span class="tool-badge">VS Code</span>
+              <span class="tool-badge">Git (Basic)</span>
+              <span class="tool-badge">Microsoft Office</span>
+              <span class="tool-badge">GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-group glass-card reveal">
+            <h3 class="skill-group-title">Soft Skills</h3>
+            <div class="tool-badges">
+              <span class="tool-badge">Problem Solving</span>
+              <span class="tool-badge">Analytical Thinking</span>
+              <span class="tool-badge">Teamwork</span>
+              <span class="tool-badge">Communication</span>
+              <span class="tool-badge">Time Management</span>
+              <span class="tool-badge">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Academic Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+             <i class="fa-solid fa-folder" style="color: rgb(255, 255, 255);"></i>
+              <span class="project-tag">Python</span>
+            </div>
+            <h3 class="project-title">Student Record Management System</h3>
+            <p class="project-desc">
+              A command-line Python application designed to manage student
+              records efficiently. Built using functions, loops, and file
+              handling to store and retrieve student data persistently.
+            </p>
+            <ul class="project-points">
+              <li>Implemented input validation to prevent invalid data entry</li>
+              <li>Used file I/O to persist records between sessions</li>
+              <li>Applied modular design with separate functions per task</li>
+              <li>Reinforced structured programming principles</li>
+            </ul>
+            <div class="project-footer">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">File I/O</span>
+              <span class="tech-pill">Functions</span>
+            </div>
+          </div>
+
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+              <i class="fa-solid fa-server" style='color: rgb(255, 255, 255);'></i>
+              <span class="project-tag">SQL</span>
+            </div>
+            <h3 class="project-title">Relational Database Design Project</h3>
+            <p class="project-desc">
+              Designed and implemented a relational database schema from
+              scratch. Focused on data normalization, efficient table
+              relationships, and writing practical SQL queries.
+            </p>
+            <ul class="project-points">
+              <li>Designed tables with primary and foreign keys</li>
+              <li>Wrote SELECT, INSERT, UPDATE, and DELETE queries</li>
+              <li>Applied 1NF, 2NF, and 3NF normalization rules</li>
+              <li>Understood how structure affects query performance</li>
+            </ul>
+            <div class="project-footer">
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Normalization</span>
+              <span class="tech-pill">Relational DB</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- interests -->
+    <section class="section" id="interests">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Interests</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Areas I'm excited to explore further in my CS journey
+          </p>
+        </div>
+
+        <div class="interests-grid reveal">
+          <div class="interest-card">
+            <i class="fa-solid fa-desktop" style="color: rgb(255, 255, 255)"></i>
+            <span class="interest-label">Software Development</span>
+          </div>
+          <div class="interest-card">
+            <i class="fa-solid fa-robot" style="color: rgb(255, 255, 255)"></i>
+            <span class="interest-label">Artificial Intelligence</span>
+          </div>
+          <div class="interest-card">
+            <i class="fa-solid fa-lock" style="color: rgb(255, 255, 255)"></i>
+            <span class="interest-label">Cybersecurity</span>
+          </div>
+          <div class="interest-card">
+            <i class="fa-solid fa-chart-line" style="color: rgb(255, 255, 255)"></i>
+            <span class="interest-label">Data Science</span>
+          </div>
+          <div class="interest-card">
+            <i class="fa-brands fa-medapps" style="color: rgb(255, 255, 255)"></i>
+            <span class="interest-label">Emerging Technologies</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="section section-alt mb-16" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="section-line"></div>
+          <p class="section-subtitle">
+            Open to internships, project collaborations, and networking. Feel
+            free to reach out!
+          </p>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-info glass-card">
+            <h3 class="card-label">Contact Details</h3>
+            <div class="contact-item">
+              <i class="fa-solid fa-at" style="color: rgb(255, 255, 255)"></i>
+              <div>
+                <p class="contact-type">Email</p>
+                <a href="mailto:ryandxb777@gmail.com" class="contact-value">
+                  ryandxb777@gmail.com
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone" style="color: rgb(255, 255, 255)"></i>
+              <div>
+                <p class="contact-type">Phone</p>
+                <a href="tel:+491785318612" class="contact-value">
+                  +49 178 5318612
+                </a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot" style="color: rgb(255, 255, 255)"></i>
+              <div>
+                <p class="contact-type">Location</p>
+                <p class="contact-value">Zossen, Brandenburg, Germany</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form glass-card">
+            <h3 class="card-label">Send a Message</h3>
+            <p class="form-note">
+              This form uses your default email client. Click Send to open it.
+            </p>
+
+            <!-- mailto stuff - no backend needed -->
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="e.g. Jane Smith" />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" class="form-input" placeholder="e.g. Internship Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" class="form-input form-textarea" placeholder="Write your message here..."></textarea>
+            </div>
+            <!-- don't delete onclick, script.js needs it -->
+            <button class="btn-primary full-width" id="send-btn" onclick="sendEmail()">
+              Send via Email ↗
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="social-island">
+      <a href="mailto:ryandxb777@gmail.com" aria-label="Email" class="social-icon">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="https://github.com/ryandxb777" target="_blank" aria-label="GitHub" class="social-icon">
+        <i class="fa-brands fa-github"> </i>
+      </a>
+
+      <a href="https://linkedin.com/in/ryan-basheer" target="_blank" aria-label="LinkedIn" class="social-icon">
+        <i class="fa-brands fa-linkedin-in"></i>
+      </a>
+    </footer>
+
+    <!-- back to top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <!-- TODO: analytics (never) -->
+    <script src="script.js"></script>
+  </body>
+</html>

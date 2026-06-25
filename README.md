@@ -57,9 +57,9 @@ portfolio/
 │
 │___documents/
 │       │___Ryan-CV.pdf
-
 ---
 
+```
 ## 🚀 Academic Projects
 
 ### Student Record Management System

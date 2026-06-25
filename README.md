@@ -112,8 +112,7 @@ portfolio/
 
 🔗 GitHub: https://github.com/ryanbasheerde7
 
-🔗 LinkedIn: https://www.linkedin.com/in/ryan-basheer-m-a2a8593b3?utm_source=share_via&utm_content=profile&utm_medium=member_ios
-
+🔗 LinkedIn: https://www.linkedin.com/in/ryan-basheer-m-a2a8593b3
 ---
 
 ## 👨‍💻 Author

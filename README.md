@@ -113,6 +113,7 @@ portfolio/
 🔗 GitHub: https://github.com/ryanbasheerde7
 
 🔗 LinkedIn: https://www.linkedin.com/in/ryan-basheer-m-a2a8593b3
+
 ---
 
 ## 👨‍💻 Author

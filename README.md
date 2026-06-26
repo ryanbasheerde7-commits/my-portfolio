@@ -60,47 +60,6 @@ portfolio/
 ---
 
 ```
-## 🚀 Academic Projects
-
-### Student Record Management System
-- Developed a Python application to manage student records.
-- Implemented functions, loops, file handling, and input validation.
-- Applied modular and structured programming concepts.
-
-### Relational Database Design Project
-- Designed relational database tables using SQL.
-- Wrote SELECT, INSERT, UPDATE, and DELETE queries.
-- Applied normalization principles and database design fundamentals.
-
----
-
-## 💻 Technical Skills
-
-### Programming Languages
-- Python
-- SQL
-
-### Computer Science Concepts
-- Object-Oriented Programming
-- Data Structures
-- Algorithms
-- Big-O Notation
-- Database Fundamentals
-
-### Tools
-- Visual Studio Code
-- Git (Basic)
-- Microsoft Office
-
----
-
-## 🌱 Currently Learning
-
-- Advanced Python Programming
-- Data Structures and Algorithms
-- Database Systems
-- Web Development Fundamentals
-- Emerging Technologies in Computer Science
 
 ---
 
